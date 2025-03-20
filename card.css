@@ -1,0 +1,92 @@
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Mono", sans-serif;
+  background-image: url("https://getflex.com/wp-content/webp-express/webp-images/uploads/2024/01/flex_logo_white-1.png.webp");
+  background-repeat: no-repeat;
+  /* background-position will need adjusting depending on your logo */
+  background-position: bottom 150px left 190px;
+  font-size: 6rem;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  width: 100%;
+  color: #fff;
+}
+
+.pan-separator {
+  margin: 0.2em;
+}
+
+#pan {
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-size: 5.5rem;
+  font-weight: 500;
+  height: 32px;
+  justify-content: bottom;
+  margin: 0.5em;
+  line-height: 30px;
+  padding: 2px 10px 0;
+  position: absolute;
+}
+
+#expiry {
+  border-radius: 6px;
+  bottom: 24px;
+  font-size: 4rem;
+  font-weight: 400;
+  left: 1em;
+  line-height: 30px;
+  opacity: 0.8;
+  padding: 2px 4px 0;
+  position: absolute;
+  margin-bottom: 1em
+}
+
+#month, #year {
+  border-radius: 6px;
+  cursor: pointer;
+  line-height: 30px;
+  padding: 4px 1px;
+}
+
+#cvv {
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin-left: auto;
+  margin-right: 1em;
+  margin-bottom: 1.5em;
+  margin-top: auto;
+  opacity: 0.8;
+  padding: 2px 4px 0;
+  margin-
+}
+
+#expiry::before {
+  content: 'EXP ';
+}
+
+#cvv::before {
+  content: 'CVV ';
+}
+
+#cvv:hover, #pan:hover, #month:hover, #year:hover  {
+  background-color:rgba(0, 0, 0, 0.1);
+}
+
+#cvv:active, #pan:active, #month:active, #year:active {
+  background-color:rgba(0, 0, 0, 0.05);
+}
+
+#alert {
+  display: none;
+}
